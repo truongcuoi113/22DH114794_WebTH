@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>Tinh tien</title>
+    <meta http-equiv="content-type" content="text/html" charset="" />
+    <script language="Javascript">
+        function caculatetotal {
+            var dg = parseFloat(document.getElementById("iPrice").value);
+            var sl = parseFloat(document.getElementById("iQuantity").value);
+            window.document.getElementById("ibtotal").value = dg * sl;
+        }
+    </script>
+</head>
+<body>
+    Nhap so luong va don gia
+    <form name="shoppingcart" method="get">
+        don gia: <input type="number"  id="iPrice" name="Price" /><br />
+        so luong: <input type="number" id=" iQuantity" name="Quantity" min="1"
+                         onchange="caculatetotal();"<br />
+        thanh tien: <input type="text" id="ibtotal" name="total" /><br />
+
+    </form>
+</body>
+</html>
+

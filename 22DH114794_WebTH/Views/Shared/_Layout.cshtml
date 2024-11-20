@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<style>
+    /*Phần header*/
+    head {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        margin-top:-50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 200px;
+        background-color: white;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+        .header-left img {
+            height: 80px;
+            margin-right: 20px;
+        }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 14px;
+            width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            margin-left: 5px;
+            background-color: #2874f0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    .header-links {
+        display: flex;
+        align-items: center;
+    }
+
+        .header-links a {
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+    .diachi {
+        color: gray;
+        font-size: 14px;
+    }
+  
+    
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <div class="header">
+        <div class="header-left">
+            <img src="~/Hinh/images (4).png" alt="logo" />
+            <div class="search-bar">
+                <input type="text" placeholder="Freeship đơn từ 45k">
+                <button>Tìm kiếm</button>
+            </div>
+        </div>
+        <div class="header-links">
+            <i class="fas fa-home"></i>
+            <a href="#">Trang chủ</a>
+            <i class="far fa-laugh-wink"></i>
+            <a href="#">Tài khoản</a>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="diachi">
+            Giao đến: <a href="#">Q. 1, P. Bến Nghé, Hồ Chí Minh</a>
+        </div>
+    </div>
+
+</head>
+<body>
+   
+
+    @RenderBody()
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="banner">
+            banner
+        </div>
+        <div id="Top-menu">
+            top menu
+            <a href="~/Views/Home/Trangchu.cshtml">home</a>
+            <a href="~/Views/Home/About.cshtml">About</a>
+            <a href="~/Views/Home/Contact.cshtml">Contact</a>
+        </div>
+     <div id="main-content">
+        @RenderBody()
+         main content
+    </div>
+        <div id="bottom">
+            bottom
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<style type="text/css">
+
+    body {
+        background-color: antiquewhite;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #container {
+        border: 2px solid #808080;
+        width: 100%;
+    }
+
+    #banner {
+        background-color: aquamarine #ffd800;
+        height: 150px;
+    }
+
+    #Top-menu {
+        background-color: #b6ff00;
+        padding: 5px 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    #main-content {
+        background-color: #2da785;
+        min-height: 400px;
+
+    }
+    #bottom{
+        background-color: #d81b1b;
+        border-top:2px solid black;
+        text-align:center;
+        padding 5px 0;
+    }
+</style>

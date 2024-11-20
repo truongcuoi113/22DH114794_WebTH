@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<html>
+<head>
+    <title>Validate</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <script language="javascript">
+        function Respond() {
+            var check = document.getElementsByName(checkbox);
+            if (check[0].checked == true) {
+                document.getElementById('huflit').innerHTML = 'toi la sinh vien huflit';
+            }
+            if (check[1].checked == true) {
+                document.getElementById('huflit').innerHTML = 'toi khong phai la sinh vien huflit';
+            }
+
+        };
+    </script>
+</head>
+<body>
+    <h4>Ban co phai la sinh vien huflit khong</h4>
+    <input type="radio" name="checkbox" id="chon" value="" /> phai
+    <br />
+    <input type="radio" name="checkbox" id="chon" value="" /> khong phai
+    <br />
+    <input type="submit" value="cau tra loi" onclick="Respond();" />
+    <br />
+    <span id="huflit"></span>
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>Validate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script language="javascript">
+        function Respond() {
+            var check = document.getElementsByName("checkbox");
+            if (check[0].checked == true) {
+                document.getElementById('huflit').innerHTML = 'Tôi là sinh viên khoa CNTT, trường Huflit';
+            }
+            if (check[1].checked == true) {
+                document.getElementById('huflit').innerHTML = 'Tôi không phải sinh viên khoa CNTT, trường Huflit';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h4>Bạn có phải là sinh viên khoa CNTT, trường Huflit không?</h4>
+    <input type="radio" name="checkbox" id="chon" value="" /> Phải
+    <br />
+    <input type="radio" name="checkbox" id="chon" value="" /> Không phải
+    <br />
+    <input type="submit" value="Câu trả lời" onclick="Respond();" />
+    <br />
+    <span id="huflit"></span>
+</body>
+</html>

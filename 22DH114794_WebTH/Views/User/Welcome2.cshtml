@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}<html>
+<head>
+    <title>
+        Welcome page: su dung from
+        <script language="Javascript">
+
+        </script>
+    </title>
+</head>
+<body>
+    <form name="welcome">
+        <input type="text" name="txtName" value="toi den tu" maxlength="30" />
+
+        <input type="button" name="btnwelcome" value="welcome"
+               onclick="displayMsg(txtName, value);"/>
+
+    </form>
+    <script language="javascript">
+        function displayMsg(msg) {
+            alert(msg);//hien thi noi dung
+        }
+    </script>
+</body>
+</html>
+
